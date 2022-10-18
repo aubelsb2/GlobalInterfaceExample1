@@ -9,3 +9,5 @@ This repo represents a typescript / svelte issue with IntelliJ.
 # Import paths are incorrect when refactoring or using suggested imports:
 
 ![img_2.png](img_2.png)
+
+It also doesn't properly consider `$components` as per `svelte.config.js`
