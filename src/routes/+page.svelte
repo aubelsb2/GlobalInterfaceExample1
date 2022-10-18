@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import {ListItem} from "$components/ListItem.svelte";
+    import ListItemComponent from "$components/ListItem.svelte";
+
+    const list : Array<ListItem> = [
+        { Name: "a", },
+    ]
+</script>
+
+<ul>
+    {#each list as i}
+        <ListItemComponent li={i} />
+    {/each}
+</ul>
